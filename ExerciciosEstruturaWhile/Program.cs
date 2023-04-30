@@ -54,6 +54,42 @@ namespace ExerciciosEstruturaWhile {
                 y = int.Parse(vari[1]);
             } */
 
+
+            /* Exercício 03 - Um posto de combustíveis deseja determinar qual de seus produtos tem a preferência de seus clientes. Escreva
+             * um algoritmo para ler o tipo de combustível abastecido (codificado da seguinte forma: 1. Alcool 2. Gasolina 3. Diesel 
+             * 4. Fim). Caso o usuário informe um código inválido (fora da faixa de 1 a 4) deve ser solicitado um novo código (até 
+             * que seja válido). O programa será encerrado quando o código informado for o número 4. Deve ser escrito a
+             * mensagem: "Muito obrigado!" e a quantidade de clientes que abasteceram cada tipo de combustível.
+             * 
+
+            int menu, alcool, gasolina, diesel = 0;
+            alcool = 0;
+            gasolina = 0;
+            diesel = 0;
+
+            Console.WriteLine("Digite o primeiro código para iniciar: ");
+            menu = int.Parse(Console.ReadLine());
+
+            while (menu != 4) {
+                if (menu == 1) {
+                    alcool++;
+                }
+                else if (menu == 2) {
+                    gasolina++;
+                }
+                else if (menu == 3) {
+                    diesel++;
+                }
+
+                menu = int.Parse(Console.ReadLine());
+
+            }
+
+            Console.WriteLine("Muito obrigado!");
+            Console.WriteLine("Alcool: " + alcool);
+            Console.WriteLine("Gasolina: " + gasolina);
+            Console.WriteLine("Diesel: " + diesel); */
+
         }
     }
 }
